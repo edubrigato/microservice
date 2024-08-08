@@ -12,5 +12,4 @@ public interface SeguroMapper {
 
     SeguroDTO toDTO(Seguro seguro);
 
-    Seguro toEntity(SeguroDTO seguroDTO);
 }

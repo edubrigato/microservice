@@ -2,7 +2,7 @@
 
 ## <a name="dicas">Resolução</a>
 
-Hoje me encontro como Júnior em um Monólito Legada que utiliza Java 8 e arquitetura em camadas. Antes de resolver o desafio, pesquisei mais sobre Clean Architecture e SOLID.
+Hoje me encontro como Júnior em um Monólito Legado que utiliza Java 8 e arquitetura em camadas. Antes de resolver o desafio, pesquisei mais sobre Clean Architecture e SOLID.
 Apartir daí, começei o desafio.
 
   Segui com a arquitetura em camadas, porém, com a separação de pacotes por funcionalidades,

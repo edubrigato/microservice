@@ -1,7 +1,7 @@
-package br.com.seguros.presentation.mapper;
+package br.com.seguros.application.mapper;
 
-import br.com.seguros.application.dto.SeguroDTO;
 import br.com.seguros.domain.model.Seguro;
+import br.com.seguros.application.dto.SeguroDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

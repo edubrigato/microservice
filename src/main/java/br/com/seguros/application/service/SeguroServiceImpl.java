@@ -1,9 +1,11 @@
 package br.com.seguros.application.service;
 
+import br.com.seguros.application.dto.SeguroDTO;
+import br.com.seguros.application.mapper.SeguroMapper;
+import br.com.seguros.domain.model.Seguro;
 import br.com.seguros.application.exception.BadRequest;
 import br.com.seguros.application.factory.SeguroFactory;
 import br.com.seguros.domain.constants.CategoriaSeguroImpostos;
-import br.com.seguros.domain.model.Seguro;
 import br.com.seguros.domain.repository.SeguroRepository;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +21,7 @@ public class SeguroServiceImpl implements SeguroService {
         this.seguroRepository = seguroRepository;
     }
 
-    public Seguro calcularSeguro(String nome, String categoriaStr, BigDecimal preco_base) {
+    public SeguroDTO calcularSeguro(String nome, String categoriaStr, BigDecimal preco_base) {
         if (categoriaStr == null || categoriaStr.isEmpty()) {
             throw new BadRequest("Categoria não pode ser nula ou vazia");
         }
@@ -28,6 +30,6 @@ public class SeguroServiceImpl implements SeguroService {
 
         Seguro seguro = SeguroFactory.criarSeguro(nome, categoria, preco_base);
         seguroRepository.save(seguro);
-        return seguro;
+        return SeguroMapper.INSTANCE.toDTO(seguro);
     }
 }

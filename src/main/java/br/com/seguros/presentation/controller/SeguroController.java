@@ -2,8 +2,6 @@ package br.com.seguros.presentation.controller;
 
 import br.com.seguros.application.dto.SeguroDTO;
 import br.com.seguros.application.service.SeguroService;
-import br.com.seguros.domain.model.Seguro;
-import br.com.seguros.presentation.mapper.SeguroMapper;
 import br.com.seguros.presentation.request.SeguroRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,8 +21,8 @@ public class SeguroController {
 
     @PostMapping("/calcular")
     public ResponseEntity<SeguroDTO> calcularSeguro(@RequestBody SeguroRequest request) {
-        Seguro seguro = seguroService.calcularSeguro(request.getNome(), request.getCategoria(), request.getPreco_base());
-        return ResponseEntity.ok().body(SeguroMapper.INSTANCE.toDTO(seguro));
+        SeguroDTO seguroDTO = seguroService.calcularSeguro(request.getNome(), request.getCategoria(), request.getPreco_base());
+        return ResponseEntity.ok().body(seguroDTO);
     }
 
 }

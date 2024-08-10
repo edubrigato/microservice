@@ -9,4 +9,5 @@ import java.util.UUID;
 
 @Repository
 public interface SeguroRepositoryImpl extends JpaRepository<Seguro, UUID>, SeguroRepository {
+
 }

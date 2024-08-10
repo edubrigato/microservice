@@ -17,6 +17,4 @@ public class SeguroDTO {
     private BigDecimal preco_base;
 
     private BigDecimal preco_tarifado;
-
-
 }

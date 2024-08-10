@@ -1,11 +1,13 @@
 package br.com.seguros.application.factory;
 
+import br.com.seguros.domain.model.Seguro;
 import br.com.seguros.application.exception.BadRequest;
 import br.com.seguros.domain.constants.CategoriaSeguroImpostos;
-import br.com.seguros.domain.model.Seguro;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class SeguroFactory {
 
     public static Seguro criarSeguro(String nome, CategoriaSeguroImpostos categoria, BigDecimal preco_base) {

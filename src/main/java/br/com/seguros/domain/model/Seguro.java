@@ -8,8 +8,8 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-@Entity
 @Data
+@Entity
 public class Seguro {
 
     @Id
@@ -23,6 +23,5 @@ public class Seguro {
     private BigDecimal preco_base;
 
     private BigDecimal preco_tarifado;
-
 
 }

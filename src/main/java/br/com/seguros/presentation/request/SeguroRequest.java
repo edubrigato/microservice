@@ -1,4 +1,4 @@
-package br.com.seguros.infrastructure.controller.request;
+package br.com.seguros.presentation.request;
 
 import java.math.BigDecimal;
 

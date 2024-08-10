@@ -1,4 +1,4 @@
-package br.com.seguros.domain.exception;
+package br.com.seguros.application.exception;
 
 public class BadRequest extends IllegalArgumentException{
 

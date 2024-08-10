@@ -1,4 +1,4 @@
-package br.com.seguros.infrastructure.configuration;
+package br.com.seguros.configuration;
 
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;

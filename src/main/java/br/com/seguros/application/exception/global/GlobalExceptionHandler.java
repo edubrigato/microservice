@@ -1,7 +1,7 @@
-package br.com.seguros.domain.exception.global;
+package br.com.seguros.application.exception.global;
 
 
-import br.com.seguros.domain.exception.BadRequest;
+import br.com.seguros.application.exception.BadRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

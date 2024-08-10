@@ -1,6 +1,6 @@
 package br.com.seguros.domain.repository;
 
-import br.com.seguros.domain.entity.Seguro;
+import br.com.seguros.domain.model.Seguro;
 
 public interface SeguroRepository {
 

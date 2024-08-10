@@ -14,8 +14,8 @@ import java.math.BigDecimal;
 @Service
 public class SeguroServiceImpl implements SeguroService {
 
-
     private final SeguroRepository seguroRepository;
+
 
     public SeguroServiceImpl(SeguroRepository seguroRepository) {
         this.seguroRepository = seguroRepository;
